@@ -48,18 +48,27 @@ export function Skills() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance">My Toolkit</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
+            <span className="relative inline-block text-primary">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                My Toolkit
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                My Toolkit
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                My Toolkit
+              </span>
+              <span className="relative z-10">My Toolkit</span>
+            </span>
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <Card
                 key={category.title}
                 /* Enhanced card styling with shadows and rotation hover */
-                className="p-6 bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 hover:scale-105 hover:-rotate-1 shadow-md hover:shadow-xl"
-                style={{
-                  animationDelay: `${categoryIndex * 100}ms`,
-                  animation: isVisible ? "fadeInUp 0.6s ease-out forwards" : "none",
-                }}
+                className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
               >
                 <h3 className="text-xl font-bold mb-4 text-primary">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">

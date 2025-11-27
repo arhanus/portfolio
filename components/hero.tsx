@@ -32,11 +32,47 @@ export function Hero() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight">
-            Hi! I&apos;m Arhan
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight relative">
+            {/* 3D Background Layers for "Hi! I'm Arhan" */}
+            <span className="relative inline-block text-primary">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                Hi! I&apos;m Arhan,
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                Hi! I&apos;m Arhan,
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                Hi! I&apos;m Arhan,
+              </span>
+              <span className="relative z-10">Hi! I&apos;m Arhan,</span>
+            </span>
             <br />
-            <span className="text-primary block">CS Student and</span>
-            <span className="text-primary block">Full-Stack Dev</span>
+            {/* 3D Background Layers for "CS Student and" */}
+            <span className="text-primary block relative">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                CS Student and
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                CS Student and
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                CS Student and
+              </span>
+              <span className="relative z-10">CS Student and</span>
+            </span>
+            {/* 3D Background Layers for "Full-Stack Dev" */}
+            <span className="text-primary block relative">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                Full-Stack Dev
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                Full-Stack Dev
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                Full-Stack Dev
+              </span>
+              <span className="relative z-10">Full-Stack Dev</span>
+            </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">

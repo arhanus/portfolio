@@ -29,7 +29,7 @@ const projects = [
       "An intelligent chatbot powered by openAI API and fine-tuned for OSU students.",
     image: "/chatbot.png",
     tags: ["Next.js", "REST API"],
-    github: "https://github.com/arhanus0/chatosu",
+    github: "https://github.com/arhanus/chatosu",
     demo: "https://chat-osu.vercel.app",
   },
 ]
@@ -97,13 +97,26 @@ export function Projects() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance">Stuff I&apos;ve Built</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
+            <span className="relative inline-block text-primary">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                Stuff I&apos;ve Built
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                Stuff I&apos;ve Built
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                Stuff I&apos;ve Built
+              </span>
+              <span className="relative z-10">Stuff I&apos;ve Built</span>
+            </span>
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card
                 key={project.title}
-                className="overflow-hidden bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 hover:scale-105 hover:-rotate-1 group shadow-lg hover:shadow-2xl"
+                className="bg-yellow-200/3 border border-[#D2B48C] shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] overflow-hidden transition-all duration-300 group hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
                 style={{
                   animationDelay: `${index * 100}ms`,
                   animation: isVisible ? "fadeInUp 0.6s ease-out forwards" : "none",

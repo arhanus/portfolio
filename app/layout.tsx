@@ -6,7 +6,7 @@ import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
-
+//
 export const metadata: Metadata = {
   title: "Arhan's Portfolio",
   description: "Arhan's portfolio showcasing projects, skills, and passion for software development",

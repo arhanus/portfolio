@@ -83,10 +83,23 @@ export function Contact() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance">Let&apos;s Work Together</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
+            <span className="relative inline-block text-primary">
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
+                Let&apos;s Work Together
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
+                Let&apos;s Work Together
+              </span>
+              <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
+                Let&apos;s Work Together
+              </span>
+              <span className="relative z-10">Let&apos;s Work Together</span>
+            </span>
+          </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Card className="p-8 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Input
@@ -153,7 +166,7 @@ export function Contact() {
             </Card>
 
             <div className="space-y-6">
-              <Card className="p-6 bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 hover:scale-105 hover:-rotate-1 shadow-md hover:shadow-lg">
+              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <Mail className="w-5 h-5 text-primary" />
@@ -165,7 +178,7 @@ export function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 hover:scale-105 hover:-rotate-1 shadow-md hover:shadow-lg">
+              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <Phone className="w-5 h-5 text-primary" />
@@ -177,7 +190,7 @@ export function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-card border-2 border-border hover:border-primary/70 transition-all duration-300 hover:scale-105 hover:-rotate-1 shadow-md hover:shadow-lg">
+              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <MapPin className="w-5 h-5 text-primary" />

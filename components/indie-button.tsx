@@ -9,13 +9,13 @@ interface IndieButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const IndieButton = forwardRef<HTMLButtonElement, IndieButtonProps>(
   ({ className, variant = "primary", size = "md", children, ...props }, ref) => {
     const baseStyles =
-      "font-bold border-[1px] border-foreground rounded-xl transition-all duration-200 active:translate-x-[3px] active:translate-y-[3px] hover:cursor-pointer"
+      "font-bold border-[1px] rounded-xl transition-all duration-200  hover:cursor-pointer active:translate-y-[2px]"
 
     const variantStyles = {
       primary:
-        "bg-primary text-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-[2px] hover:-translate-y-[2px]",
+        "bg-primary text-orange-900 border-orange-800 shadow-[0px_5px_0px_0px_rgba(146,64,14,1)] hover:shadow-[0px_7px_0px_0px_rgba(146,64,14,1)] hover:-translate-y-[2px] active:shadow-[0px_2px_0px_0px_rgba(146,64,14,1)]",
       secondary:
-        "bg-background text-foreground shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-[2px] hover:-translate-y-[2px]",
+        "bg-[#F5F5DC] text-[#6B4423] border-[#D2B48C] shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_7px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px] active:shadow-[0px_2px_0px_0px_rgba(210,180,140,1)]",
     }
 
     const sizeStyles = {
