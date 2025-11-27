@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative">
       <FloatingParticles />
-      <div className="relative z-10">
+      <div className="relative z-50">
         <Hero />
         <About />
         <Skills />

@@ -116,7 +116,7 @@ export function Projects() {
             {projects.map((project, index) => (
               <Card
                 key={project.title}
-                className="bg-yellow-200/3 border border-[#D2B48C] shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] overflow-hidden transition-all duration-300 group hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
+                className="bg-[#f0eae0] border border-[#D2B48C] shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] overflow-hidden transition-all duration-300 group hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
                 style={{
                   animationDelay: `${index * 100}ms`,
                   animation: isVisible ? "fadeInUp 0.6s ease-out forwards" : "none",

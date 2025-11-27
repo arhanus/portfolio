@@ -10,6 +10,9 @@ interface Particle {
   speedY: number
   opacity: number
   color: string
+  shape: 'circle' | 'square' | 'triangle'
+  rotation: number
+  rotationSpeed: number
 }
 
 export function FloatingParticles() {
@@ -30,30 +33,33 @@ export function FloatingParticles() {
     resizeCanvas()
     window.addEventListener("resize", resizeCanvas)
 
-    // Pastel renkler
-    const pastelColors = [
-      "rgba(255, 182, 193, 0.3)", // Light pink
-      "rgba(173, 216, 230, 0.3)", // Light blue
-      "rgba(221, 160, 221, 0.3)", // Plum
-      "rgba(176, 224, 230, 0.3)", // Powder blue
-      "rgba(255, 218, 185, 0.3)", // Peach
-      "rgba(230, 230, 250, 0.3)", // Lavender
-      "rgba(152, 251, 152, 0.3)", // Pale green
+    // Koyu bej tonları
+    const beigeColors = [
+      "rgba(160, 120, 80, 0.4)",   // Koyu bej
+      "rgba(139, 90, 60, 0.4)",    // Kahverengi bej
+      "rgba(150, 110, 75, 0.4)",   // Orta bej
+      "rgba(130, 100, 70, 0.4)",   // Koyu kahve bej
+      "rgba(145, 105, 70, 0.4)",   // Koyu tan
     ]
+    
+    const shapes: Array<'circle' | 'square' | 'triangle'> = ['circle', 'square', 'triangle']
 
     // Parçacıkları oluştur
-    const particleCount = 50
+    const particleCount = 30
     const particles: Particle[] = []
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 4 + 2, // 2-6px arası
-        speedX: (Math.random() - 0.5) * 0.5, // Yavaş yatay hareket
-        speedY: (Math.random() - 0.5) * 0.5, // Yavaş dikey hareket
+        size: Math.random() * 6 + 4, // 4-10px arası
+        speedX: (Math.random() - 0.5) * 0.3, // Yavaş yatay hareket
+        speedY: (Math.random() - 0.5) * 0.3, // Yavaş dikey hareket
         opacity: Math.random() * 0.5 + 0.3, // 0.3-0.8 arası
-        color: pastelColors[Math.floor(Math.random() * pastelColors.length)],
+        color: beigeColors[Math.floor(Math.random() * beigeColors.length)],
+        shape: shapes[Math.floor(Math.random() * shapes.length)],
+        rotation: Math.random() * Math.PI * 2,
+        rotationSpeed: (Math.random() - 0.5) * 0.02,
       })
     }
 
@@ -64,17 +70,36 @@ export function FloatingParticles() {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       particles.forEach((particle) => {
-        // Parçacığı çiz
-        ctx.beginPath()
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
+        ctx.save()
+        ctx.translate(particle.x, particle.y)
+        ctx.rotate(particle.rotation)
+        
         ctx.fillStyle = particle.color
-        ctx.shadowBlur = 15
+        ctx.shadowBlur = 10
         ctx.shadowColor = particle.color
-        ctx.fill()
+        
+        // Şekle göre çiz
+        if (particle.shape === 'circle') {
+          ctx.beginPath()
+          ctx.arc(0, 0, particle.size, 0, Math.PI * 2)
+          ctx.fill()
+        } else if (particle.shape === 'square') {
+          ctx.fillRect(-particle.size, -particle.size, particle.size * 2, particle.size * 2)
+        } else if (particle.shape === 'triangle') {
+          ctx.beginPath()
+          ctx.moveTo(0, -particle.size)
+          ctx.lineTo(particle.size, particle.size)
+          ctx.lineTo(-particle.size, particle.size)
+          ctx.closePath()
+          ctx.fill()
+        }
+        
+        ctx.restore()
 
         // Hareketi güncelle
         particle.x += particle.speedX
         particle.y += particle.speedY
+        particle.rotation += particle.rotationSpeed
 
         // Ekran sınırlarını kontrol et (wrap around)
         if (particle.x < 0) particle.x = canvas.width
@@ -101,8 +126,8 @@ export function FloatingParticles() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-0"
-      style={{ opacity: 0.6 }}
+      className="fixed inset-0 pointer-events-none"
+      style={{ opacity: 0.2, zIndex: -10 }}
     />
   )
 }

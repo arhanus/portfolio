@@ -68,7 +68,7 @@ export function Skills() {
               <Card
                 key={category.title}
                 /* Enhanced card styling with shadows and rotation hover */
-                className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
+                className="p-6 bg-[#f8f4ee] border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]"
               >
                 <h3 className="text-xl font-bold mb-4 text-primary">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">

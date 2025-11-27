@@ -47,7 +47,7 @@ export function About() {
             </span>
           </h2>
 
-          <Card className="p-8 md:p-12 bg-yellow-200/3 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] border border-[#D2B48C] transition-all duration-300 hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px] translate-y-2">
+          <Card className="p-8 md:p-12 bg-[#f0eae0] shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] border border-[#D2B48C] transition-all duration-300 hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px] translate-y-2">
             <div className="space-y-6 text-lg leading-relaxed font-bold">
               <p className="text-[#6B4423]">
                 I&apos;m a CS student who loves turning  ideas into reality through code. Whether it&apos;s building{" "}

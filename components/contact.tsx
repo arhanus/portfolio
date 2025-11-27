@@ -99,7 +99,7 @@ export function Contact() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
+            <Card className="p-8 bg-[#f8f4ee] border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Input
@@ -166,7 +166,7 @@ export function Contact() {
             </Card>
 
             <div className="space-y-6">
-              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
+              <Card className="p-6 bg-[#f8f4ee] border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <Mail className="w-5 h-5 text-primary" />
@@ -178,7 +178,7 @@ export function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
+              <Card className="p-6 bg-[#f8f4ee] border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <Phone className="w-5 h-5 text-primary" />
@@ -190,7 +190,7 @@ export function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-yellow-200/3 border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
+              <Card className="p-6 bg-[#f8f4ee] border border-[#D2B48C] transition-all duration-300 shadow-[0px_5px_0px_0px_rgba(210,180,140,1)] hover:shadow-[0px_8px_0px_0px_rgba(210,180,140,1)] hover:-translate-y-[2px]">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 border-2 border-primary/20">
                     <MapPin className="w-5 h-5 text-primary" />
