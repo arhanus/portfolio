@@ -10,27 +10,27 @@ const projects = [
   {
     title: "ClipFast.ai",
     description:
-      "AI powered content creation app allows users to create viral short-form content without the need of editing skills.",
+      "An AI-powered content platform that lets users produce viral short-form videos without prior editing experience.",
     image: "/clipfast.png",
     tags: ["Next.js", "TypeScript", "Fastify", "Python", "Stripe", "REST API", "Docker"],
     demo: "https://clipfast.ai",
   },
   {
-    title: "E-Commerce Website",
+    title: "TrialMatch AI – BeaverHacks",
     description:
-      "Full-stack e-commerce website with a custom content editing panel.",
-    image: "/ecommerce.png",
-    tags: ["Next.js", "Sanity", "Algolia", "Stripe", "Node.js"],
-    demo: "https://www.weezygo.com",
+      "Patient-to-trial matching tool: enter basic medical details and an AI scans real clinical trial databases to return matched trials with plain-language explanations. Built at BeaverHacks.",
+    image: "/trialmatchai.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "ClinicalTrials.gov API"],
+    github: "https://github.com/arhanus/trialmatch-ai",
+    demo: "https://trialmatch-ai-chi.vercel.app",
   },
   {
-    title: "AI Chat Assistant",
+    title: "AgentOffice – QuackHacks",
     description:
-      "An intelligent chatbot powered by openAI API and fine-tuned for OSU students.",
-    image: "/chatbot.png",
-    tags: ["Next.js", "REST API"],
-    github: "https://github.com/arhanus/chatosu",
-    demo: "https://chat-osu.vercel.app",
+      "A multi-agent workspace where users assemble a roster of AI agents that run in sequence, each building on the previous agent's output, to complete research, development, and business tasks without building workflows manually. Built at QuackHacks.",
+    image: "/agentoffice.png",
+    tags: ["Next.js", "TypeScript", "Three.js", "FastAPI", "Gemini API", "OpenAI API", "Supabase", "Docker"],
+    github: "https://github.com/amanshaman11/AgentOffice",
   },
 ]
 
@@ -100,15 +100,15 @@ export function Projects() {
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
             <span className="relative inline-block text-primary">
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
-                Stuff I&apos;ve Built
+                Selected Projects
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
-                Stuff I&apos;ve Built
+                Selected Projects
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
-                Stuff I&apos;ve Built
+                Selected Projects
               </span>
-              <span className="relative z-10">Stuff I&apos;ve Built</span>
+              <span className="relative z-10">Selected Projects</span>
             </span>
           </h2>
 
@@ -133,7 +133,7 @@ export function Projects() {
 
                 <div className="p-6 space-y-4">
                   <h3 className="text-xl font-bold text-balance">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed text-balance max-h-12 overflow-scroll">{project.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-balance max-h-24 overflow-scroll">{project.description}</p>
 
                   <div className="relative">
                     {project.tags.length > 4 && (

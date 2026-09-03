@@ -51,15 +51,15 @@ export function Skills() {
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
             <span className="relative inline-block text-primary">
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
-                My Toolkit
+                Skills &amp; Technologies
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
-                My Toolkit
+                Skills &amp; Technologies
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
-                My Toolkit
+                Skills &amp; Technologies
               </span>
-              <span className="relative z-10">My Toolkit</span>
+              <span className="relative z-10">Skills &amp; Technologies</span>
             </span>
           </h2>
 

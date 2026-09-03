@@ -86,15 +86,15 @@ export function Contact() {
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-balance relative">
             <span className="relative inline-block text-primary">
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(2px, 2px)' }}>
-                Let&apos;s Work Together
+                Get in Touch
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(4px, 4px)' }}>
-                Let&apos;s Work Together
+                Get in Touch
               </span>
               <span className="absolute inset-0 text-orange-800 dark:text-orange-900" style={{ transform: 'translate(6px, 6px)' }}>
-                Let&apos;s Work Together
+                Get in Touch
               </span>
-              <span className="relative z-10">Let&apos;s Work Together</span>
+              <span className="relative z-10">Get in Touch</span>
             </span>
           </h2>
 
@@ -173,7 +173,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">arhanus0@gmail.com</p>
+                    <p className="text-muted-foreground">usa@oregonstate.edu</p>
                   </div>
                 </div>
               </Card>

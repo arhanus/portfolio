@@ -76,7 +76,7 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">
-            Turning caffeine into code and ideas into reality. Let&apos;s make something awesome together.
+            I build full-stack web applications with a focus on clean architecture, performance, and thoughtful user experience.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -94,7 +94,7 @@ export function Hero() {
               variant="secondary"
               onClick={() => scrollToSection("contact")}
             >
-              Let&apos;s Chat
+              Get in Touch
             </IndieButton>
           </div>
 
@@ -103,7 +103,7 @@ export function Hero() {
               { icon: Github, href: "https://github.com/arhanus" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/arhan-us-48539a249/" },
               { icon: Twitter, href: "https://x.com/arhanus" },
-              { icon: Mail, href: "mailto:arhanus0@gmail.com" },
+              { icon: Mail, href: "mailto:usa@oregonstate.edu" },
             ].map((social, index) => (
               <a
                 key={index}
