@@ -10,7 +10,7 @@ const projects = [
   {
     title: "ClipFast.ai",
     description:
-      "An AI-powered content platform that lets users produce viral short-form videos without prior editing experience.",
+      "An AI-powered content platform that lets users script, edit, and export viral short-form videos automatically, with no prior video editing experience required.",
     image: "/clipfast.png",
     tags: ["Next.js", "TypeScript", "Fastify", "Python", "Stripe", "REST API", "Docker"],
     demo: "https://clipfast.ai",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "TrialMatch AI – BeaverHacks",
     description:
-      "Patient-to-trial matching tool: enter basic medical details and an AI scans real clinical trial databases to return matched trials with plain-language explanations. Built at BeaverHacks.",
+      "An AI tool that matches patients to relevant clinical trials by analyzing their medical history and condition details. Built at BeaverHacks in 24 hours.",
     image: "/trialmatchai.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "ClinicalTrials.gov API"],
     github: "https://github.com/arhanus/trialmatch-ai",
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "AgentOffice – QuackHacks",
     description:
-      "A multi-agent workspace where users assemble a roster of AI agents that run in sequence, each building on the previous agent's output, to complete research, development, and business tasks without building workflows manually. Built at QuackHacks.",
+      "A multi-agent workspace where you assemble AI agents that run in sequence, each building on the last, to finish tasks end to end. Built at QuackHacks.",
     image: "/agentoffice.png",
     tags: ["Next.js", "TypeScript", "Three.js", "FastAPI", "Gemini API", "OpenAI API", "Supabase", "Docker"],
     github: "https://github.com/amanshaman11/AgentOffice",
